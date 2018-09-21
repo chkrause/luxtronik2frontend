@@ -18,6 +18,6 @@
   "dependencies": {
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "luxtronik2": "file:../luxtronik2"
+    "luxtronik2": "git+https://github.com/chkrause/luxtronik2.git#develop"
   }
 }
