@@ -1,0 +1,92 @@
+Readingtime: {{data.reading_calculated_time_ms}} ms
+</br>
+<!--
+{{#each data}}
+{{@key}}</br>
+{{/each}}
+-->
+<hr>
+<h4>3003</h4>
+<table border="1">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            rawvalue
+        </th>
+        <th>
+            Value
+        </th>
+        <th>
+            name
+        </th>
+        <th>
+            calculationrule:
+        </th>
+    </tr>
+{{#each data.[3003]}}
+    <tr>
+    <td>{{@index}} - {{@key}}</td>
+    <td>{{this.rawvalue}}</td>
+    <td>{{this.value}} {{this.unit}}</td>
+    <td>{{this.name}}</td>
+    <td>{{this.calculationrule}}</td>
+    </tr>
+{{/each}}
+</table>
+
+<hr>
+<h4>3004</h4>
+<table border="1">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            rawvalue
+        </th>
+        <th>
+            Value
+        </th>
+        <th>
+            name
+        </th>
+        <th>
+            calculationrule:
+        </th>
+    </tr>
+{{#each data.[3004]}}
+    <tr>
+    <td>{{@index}} - {{@key}}</td>
+    <td>{{this.rawvalue}}</td>
+    <td>{{this.value}} {{this.unit}}</td>
+    <td>{{this.name}}</td>
+    <td>{{this.calculationrule}}</td>
+    </tr>
+{{/each}}
+</table>
+
+<hr>
+<h4>3005</h4>
+<table border="1">
+    <tr>
+        <th>
+            ID
+        </th>
+
+        <th>
+            Value
+        </th>
+        <th>
+            name
+        </th>
+    </tr>
+{{#each data.[3005]}}
+    <tr>
+    <td>{{@index}} - {{@key}}</td>
+    <td>{{this.value}} {{this.unit}}</td>
+    <td>{{this.name}}</td>
+    </tr>
+{{/each}}
+</table>
